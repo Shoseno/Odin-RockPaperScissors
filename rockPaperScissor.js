@@ -14,3 +14,18 @@ function getComputerChoice() {
     }
 
 }
+let playerChoiceCheck;
+let playChoice;
+let playInput;
+
+function getPlayerChoice() {
+    let playInput = prompt('Please type Rock,Paper, or Scissors');
+    let playChoice = (playInput.charAt(0).toUpperCase()) + (playInput.slice(1).toLowerCase());
+    if (playChoice === 'Rock' || playChoice === 'Paper' || playChoice ==='Scissors') {
+        playerChoiceCheck = 'yes';
+    } else {
+        playerChoiceCheck = 'no';
+        alert('Please enter "Rock", "Paper" or "Scissors"');
+        getPlayerChoice();
+    }
+}

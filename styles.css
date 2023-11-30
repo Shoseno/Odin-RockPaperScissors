@@ -9,6 +9,7 @@ body {
 .infoContent {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 .scoreDisplays,
@@ -28,6 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin-bottom: 20px;
 }
 
 .playerChoiceContent {
@@ -42,4 +44,11 @@ body {
 #scissors-btn {
     height: 100px;
     width: 100px;
+}
+
+.compDisplays,
+.scoreDisplays {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

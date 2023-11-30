@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #064126;
+    color: aliceblue;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.infoContent {
+    display: flex;
+    justify-content: center;
+}
+
+.scoreDisplays,
+.compDisplays {
+    max-width: 200px;
+}
+
+.secondHeader {
+    display: flex;
+    gap: 250px;
+    justify-content: center;
+}
+
+.firstHeader {
+    font-size: 38px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.playerChoiceContent {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#rock-btn, 
+#paper-btn,
+#scissors-btn {
+    height: 100px;
+    width: 100px;
+}

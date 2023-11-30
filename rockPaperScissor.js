@@ -2,6 +2,38 @@
 
 
 let compChoice;
+
+function getComputerChoice() {
+    let compChoiceRandomNum = Math.floor(Math.random() * 3) + 1;
+    if (compChoiceRandomNum === 1) {
+        compChoice = 'Scissors';
+    } else if (compChoiceRandomNum === 2) {
+        compChoice = 'Paper';
+    } else if (compChoiceRandomNum === 3) {
+        compChoice = 'Rock';
+    }
+    console.log(compChoice);
+}
+
+let playChoice;
+
+
+let rockBtn = document.querySelector('#rock-btn');
+
+rockBtn.addEventListener('click',function() {
+    playChoice = 'Rock';
+});
+
+let paperBtn = document.querySelector('#paper-btn');
+let scissorsBtn = document.querySelector('#scissors-btn');
+
+function getPlayerChoice() {
+
+   
+}
+
+/* 
+let compChoice;
 let playerChoiceCheck;
 let playChoice;
 let playInput;
@@ -61,4 +93,5 @@ function game() {
     } else {
         playRound();
     }
-}
+} 
+*/ 
